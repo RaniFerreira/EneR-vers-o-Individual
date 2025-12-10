@@ -14,7 +14,7 @@
         <img src="/individualEneR/visao/img/logo-Ener.png" alt="">
         
 
-        <form action="../controle/AutenticarLogin_class.php" method="POST">
+        <form action="/individualEneR/controle/AutenticarUsuario_class.php" method="POST">
             <?php
                 $mensagem = $_GET['erro'] ?? '';
             ?>
