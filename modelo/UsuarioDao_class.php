@@ -49,5 +49,12 @@ class UsuarioDAO {
             return false;
         }
     }
+
+     // Método para excluir usuário pelo id
+    public function excluir($id_usuario) {
+        $sql = "DELETE FROM usuario WHERE id_usuario = ?";
+        $stmt = $this->con->prepare($sql);
+        return $stmt->execute([$id_usuario]);
+    }
 }
 ?>
